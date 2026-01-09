@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>외교부 여권안내 클론코딩</title>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<meta name='Title' content='passport'>
+<meta name='Subject' content='외교부 여권안내 코딩'>
+<meta name='Keywords' content='외교부, 여권안내, 코딩, 클론코딩'>
+<meta name='Author' content='seyoung'>
+<meta name='Publisher' content='seyoung'>
+<meta name='Description' content='외교부 여권안내 클론코딩 사이트입니다.'>
+<meta name='Author-Date' content='2026-01-06'>
+
+<!-- 접근성 텍스트(skip) 숨김 -->
+<style>#skip{overflow: hidden; position:absolute; width:0; height:0; line-height:0; text-indent:-9999px;}</style>
+
+<!-- 폰트어썸 -->
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+<!-- 구글폰트 아이콘 -->
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0' />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+<!-- CSS 리셋 -->
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css'>
+
+<!-- 제이쿼리 3.7 CDN -->
+<script src='https://code.jquery.com/jquery-3.7.0.min.js' crossorigin='anonymous'></script>
+
+<!-- 로컬 CSS -->
+<link rel='stylesheet' href='./css/style.css'/>
+
+<!-- 로컬 js -->
+<script src='./js/script.js' defer></script>
+
+</head>
+<body>
+<!-- 시각장애인 웹 접근성을 위한 skip _ 지우지않아도 됩니다. -->
+
+<ul id='skip'>
+   <li><a href='#header'>헤더 바로가기</a></li>
+   <li><a href='#nav'>메뉴 바로가기</a></li>
+   <li><a href='#content'>내용 바로가기</a></li>
+   <li><a href='#footer'>하단 바로가기</a></li>
+</ul>
+<div id="wrap">
+    <div class="header">
+        <div class="header_box">
+            <div class="container">
+                <div class="inner">
+                    <h1 class="header_logo"><img src="./img/logo.png" alt="/"></h1>
+                    <div class="header_searchBox">
+                        <div class="searchBox-Wrap">
+                            <label for="total_search" class="hidden_label">검색어</label>
+                            <input type="text" placeholder="검색어를 입력하세요." title="검색어를 입력하세요." id="header_search_key" value>
+                        </div>
+                        <button type="button" class="btn_search" title="검색 버튼" >
+                            <span class="text">검색</span>
+                        </button>
+                    </div>
+                    <div class="font_control">
+                        <span class="title">글자 크기</span>
+                        <ul class="item_list">
+                            <li class="item">
+                                <button type="button" class="btn font_up" title="글자 크기 크게하는 버튼">
+                                    <span class="text">크게</span>
+                                </button>
+                            </li>
+                            <li class="item">
+                                    <button type="button" class="btn font_down" title="글자 작게 크게하는 버튼">
+                                        <span class="text">작게</span>
+                                    </button>
+                            </li>
+                            <li class="item">
+                                    <button type="button" class="btn font_init" title="글자 원래 크기로 변경하는 버튼">
+                                        <span class="text">초기화</span>
+                                    </button>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gnb_header">
+            <div class="container clearfix">
+                <div class="sitemap_wrapper">
+                    <div class="site_map">
+                        <button class="btn_site_map">
+                            <span class="icon">
+                                <span class="text">사이트맵</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <ul id="gnb" class="gnb">
+                    <li>
+                        <a href="#">
+                            <span class="text">여권신청·발급</span>
+                        </a>
+                        <div class="dep2_container">
+                            <div class="container">
+                                <div class="title menu01">
+                                    <div class="cont_wrapper">
+                                        <span class="title_wrapper">
+                                            <span class="text">여권신청·발급</span>
+                                        </span>
+                                        <div class="icon_container">
+                                            <span class="icon">여권신청·발급</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="sub_gnb">
+                                    <li><a href="#">최초 발급</a>
+                                        <ul class="depth3">
+                                            <li><a href="#">기본사항 안내</a></li>
+                                            <li><a href="#">만 18세 이상</a></li>
+                                            <li><a href="#">만 18세 미만</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">재발급</a>
+                                        <ul class="depth3">
+                                            <li><a href="#">유효기간 만료에 따른 재발급</a></li>
+                                            <li><a href="#">여권 수록 정보의 정정·변경에 따른 재발급</a></li>
+                                            <li><a href="#">여권 훼손 · 분실에 따른 재발급</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">온라인 재발급</a>
+                                        <ul class="depth3">
+                                            <li><a href="#">기본사항 안내</a></li>
+                                            <li><a href="#">온라인용 사진파일 안내</a></li>
+                                            <li><a href="#">자주 묻는 질문</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">긴급여권</a>
+                                        <ul class="depth3">
+                                            <li><a href="#">기본사항 안내</a></li>
+                                            <li><a href="#">48시간내 발급여권(전자여권)</a></li>
+                                            <li><a href="#">긴급여권 국가별 인정현황</a></li>
+                                            <li><a href="#">무사증 입국가능 국가/지역</a></li>
+                                            <li><a href="#">자주 묻는 질문</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">여행증명서</a>
+                                        <ul class="depth3">
+                                            <li><a href="#">기본사항 안내</a></li>
+                                            <li><a href="#">여행증명서 국가별 인정 현황</a></li>
+                                            <li><a href="#">무사증 입국가능 국가/지역</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">관용·외교관 여권</a></li>
+                                    <li><a href="#">여권 분실·습득</a></li>
+                                    <li><a href="#">접수기관 안내</a>
+                                        <ul class="depth3">
+                                            <li><a href="#">국내 대행기관</a></li>
+                                            <li><a href="#">재외공관</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="text">여권기본사항</span>
+                        </a>
+                        <div class="dep2_container">
+                            <div class="container">
+                                <div class="title menu02">
+                                    <div class="cont_wrapper">
+                                        <div class="title_wrapper">
+                                            <span class="text">여권기본사항</span>
+                                        </div>
+                                        <div class="icon_container">
+                                            <span class="icon">여권기본사항</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="sub_gnb">
+                                    <li><a href="#">여권 사진</a>
+                                        <ul class="depth3">
+                                            <li><a href="#">여권 사진</a></li>
+                                            <li><a href="#">온라인 여권 사진 검증</a></li>
+                                            <li><a href="#">온라인 여권 사진 크기 조정</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">로마자 성명 표기 규정</a>
+                                        <ul class="depth3">
+                                            <li><a href="#">로마자성명 표기 제도</a></li>
+                                            <li><a href="#">로마자성명 표기의 기본방법</a></li>
+                                            <li><a href="#">추천 로마자 성명 검색</a></li>
+                                            <li><a href="#">로마자성명 표기의 변경 허용 요건</a></li>
+                                            <li><a href="#">자주 묻는 질문</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">수수료 안내</a>
+                                    </li>
+                                    <li><a href="#">신청서식 모음</a>
+                                    </li>
+                                    <li><a href="#">기재사항 변경제도</a>
+                                    </li>
+                                    <li><a href="#">개별우편배송서비스</a></li>
+                                    <li><a href="#">문자알림서비스</a></li>
+                                    <li><a href="#">여권사용안내</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="text">사실증명·조회</span>
+                        </a>
+                        <div class="dep2_container">
+                            <div class="container">
+                                <div class="title menu03">
+                                    <div class="cont_wrapper">
+                                        <div class="title_wrapper">
+                                            <span class="text">사실증명·조회</span>
+                                        </div>
+                                        <div class="icon_container">
+                                            <span class="icon">사실증명·조회</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="sub_gnb">
+                                    <li><a href="#">사실증명·조회</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="text">차세대 전자여권</span>
+                        </a>
+                        <div class="dep2_container">
+                            <div class="container">
+                                <div class="title menu04">
+                                    <div class="cont_wrapper">
+                                        <div class="title_wrapper">
+                                            <span class="text">차세대 전자여권</span>
+                                        </div>
+                                        <div class="icon_container">
+                                            <span class="icon">차세대 전자여권</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="sub_gnb">
+                                    <li><a href="#">전자여권이란?</a>
+                                    </li>
+                                    <li><a href="#">차세대 전자여권 안내</a>
+                                    </li>
+                                    <li><a href="#">온라인 체험관</a>
+                                    </li>
+                                    <li><a href="#">홍보자료</a>
+                                    </li>
+                                    <li><a href="#">여권의 역사이야기</a>
+                                    </li>
+                                    <li><a href="#">자주묻는 질문</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="text">알림·공시·자료</span>
+                        </a>
+                        <div class="dep2_container">
+                            <div class="container">
+                                <div class="title menu05">
+                                    <div class="cont_wrapper">
+                                        <div class="title_wrapper">
+                                            <span class="text">알림·공시·자료</span>
+                                        </div>
+                                        <div class="icon_container">
+                                            <span class="icon">알림·공시·자료</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="sub_gnb">
+                                    <li><a href="#">알림사항</a>
+                                        <ul class="depth3">
+                                            <li><a href="#">공지사항</a></li>
+                                            <li><a href="#">보도자료</a></li>
+                                            <li><a href="#">자주묻는 질문</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">홍보자료</a>
+                                        <ul class="depth3">
+                                            <li><a href="#">카드뉴스</a></li>
+                                            <li><a href="#">발행물</a></li>
+                                            <li><a href="#">홍보영상</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">법령·지침</a>
+                                        <ul class="depth3">
+                                            <li><a href="#">여권법령정보</a></li>
+                                            <li><a href="#">공시</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">해외출입국정보</a>
+                                        <ul class="depth3">
+                                            <li><a href="#">해외 안전 정보</a></li>
+                                            <li><a href="#">국가별 입국허가 요건</a></li>
+                                            <li><a href="#">국가별 입출국 유의 사항</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="text">여권과 소개</span>
+                        </a>
+                        <div class="dep2_container">
+                            <div class="container">
+                                <div class="title menu06">
+                                    <div class="cont_wrapper">
+                                        <div class="title_wrapper">
+                                            <span class="text">여권과 소개</span>
+                                        </div>
+                                        <div class="icon_container">
+                                            <span class="icon">여권과 소개</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="sub_gnb">
+                                    <li><a href="#">업무안내</a>
+                                    </li>
+                                    <li><a href="#">찾아오시는 길</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
