@@ -893,13 +893,13 @@ body.sitemap_open {
     display: inline-block;
 }
 .sec2 .box_menu_wrap.sty1 .box_menu_list > li.color1 .plus_link .plus_btn:after {
-    background-image: url(/img/icon_plus1.png);
+    background-image: url(../img/icon_plus1.png);
 }
 .sec2 .box_menu_wrap.sty1 .box_menu_list > li.color2 .plus_link .plus_btn:after {
-    background-image: url(/img/icon_plus2.png);
+    background-image: url(../img/icon_plus2.png);
 }
 .sec2 .box_menu_wrap.sty1 .box_menu_list > li.color3 .plus_link .plus_btn:after {
-    background-image: url(/img/icon_plus3.png);
+    background-image: url(../img/icon_plus3.png);
 }
 .plus_link:hover .plus_btn:after {
   transform: translateX(0px) rotate(360deg);
@@ -951,7 +951,7 @@ body.sitemap_open {
 }
 .sec2 .box_menu_wrap .box_menu_list > li .plus_link.sty1 {
     padding: 27px 33px 407px;
-    background-image: url(/img/main_box_img1.png);
+    background-image: url(../img/main_box_img1.png);
     background-size: 100% auto;
 }
 .sec2 .box_menu_wrap .box_menu_list > li .plus_link .box_menu_tit {
@@ -998,7 +998,7 @@ body.sitemap_open {
     height: 283px;
 } */
 .sec2 .box_menu_wrap .box_menu_list > li.color6 .plus_link {
-    background-image: url(/img/main_box_img2.png);
+    background-image: url(../img/main_box_img2.png);
     background-size: 145px auto;
 }
 .sec2 .box_menu_wrap .box_menu_list.type2 > li .plus_link .box_menu_tit {
@@ -1023,7 +1023,7 @@ body.sitemap_open {
     height: 283px;
 } */
 .sec2 .box_menu_wrap .box_menu_list > li.color5 .plus_link {
-    background-image: url(/img/main_box_img3.png);
+    background-image: url(../img/main_box_img3.png);
     background-size: 209px auto;
     
 }
@@ -1184,7 +1184,7 @@ body.sitemap_open {
     width: 100%;
     vertical-align: top;
     text-align: right;
-    background-image: url(/img/main_line_dot2.png);
+    background-image: url(../img/main_line_dot2.png);
     background-position: left center;
     background-size: 2px 2px;
     background-repeat: repeat-x;
@@ -1239,14 +1239,14 @@ body.sitemap_open {
 }
 .sec4 .container .freq_ask .tag_select .tag_list .list .tab_slider_wrap .slick-prev {
     left: -40px;
-    background-image: url(/img/sec4_tag_prev.png);
+    background-image: url(../img/sec4_tag_prev.png);
 }
 .slick-track .ask_prev {
     font-size: 0;
 }
 .sec4 .container .freq_ask .tag_select .tag_list .list .tab_slider_wrap .slick-next {
     right: -40px;
-    background-image: url(/img/sec4_tag_next.png)
+    background-image: url(../img/sec4_tag_next.png)
 }
 .sec4 .container .freq_ask .tag_select .tag_list .list .slick-arrow {
     display: inline-block;
@@ -1342,11 +1342,11 @@ body.sitemap_open {
 }
 .sec4 .container .freq_ask .ask_slider_container .slick-arrow.slick-prev {
     left: -68px;
-    background-image: url(/img/sec4_prev.png);
+    background-image: url(../img/sec4_prev.png);
 }
 .sec4 .container .freq_ask .ask_slider_container .slick-arrow.slick-next {
     right: -68px;
-    background-image: url(/img/sec4_next.png);
+    background-image: url(../img/sec4_next.png);
 }
 .sec4 .container .freq_ask .slick-arrow.slick-prev:before {
     content: none;
@@ -1453,7 +1453,7 @@ body.sitemap_open {
 .sec4 .container .freq_ask .ask_slider_container .ask_slider .slide .slide_wrapper .text_box .btn_box .btn .text {
     display: inline-block;
     padding: 0 16px 0 0;
-    background-image: url(/img/icon_btn_more.png);
+    background-image: url(../img/icon_btn_more.png);
     background-position: right center;
     background-size: 12px auto;
     background-repeat: no-repeat;
@@ -1529,7 +1529,7 @@ body.sitemap_open {
     width: 320px;
     margin: 0;
     padding: 40px 32px;
-    background-image: url(/img/sec4_bg.png);
+    background-image: url(../img/sec4_bg.png);
     background-position: 0 0;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1591,7 +1591,7 @@ body.sitemap_open {
 }
 .sec3 .sec3_cont_wrap .sec3_cont_inner .left_wrap .sec3_left_list > li.color1 {
     background-color: #3d93bc;
-    background-image: url(/img/bt_left_img1.png);
+    background-image: url(../img/bt_left_img1.png);
     background-position: right 19px bottom 28px;
 }
 .sec3 .sec3_cont_wrap .sec3_cont_inner .left_wrap .sec3_left_list > li {
