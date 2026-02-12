@@ -20,11 +20,12 @@
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 
 <!-- 구글폰트 아이콘 -->
-<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0' />
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0'>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+ -->
 <!-- CSS 리셋 -->
 <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css'>
 
@@ -32,10 +33,24 @@
 <script src='https://code.jquery.com/jquery-3.7.0.min.js' crossorigin='anonymous'></script>
 
 <!-- 로컬 CSS -->
-<link rel='stylesheet' href='./css/style.css'/>
+<link rel='stylesheet' href='./css/style.css'>
 
 <!-- 로컬 js -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src='./js/script.js' defer></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+<!-- 모바일 깨짐 방지 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Slick-slide -->
+<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+
 
 </head>
 <body>
@@ -52,7 +67,7 @@
         <div class="header_box">
             <div class="container">
                 <div class="inner">
-                    <h1 class="header_logo"><img src="./img/logo.png" alt="/"></h1>
+                    <h1 class="header_logo"><a href="/"><img src="./img/logo.png" alt="외교부 여권안내 로고"></a></h1>
                     <div class="header_searchBox">
                         <div class="searchBox-Wrap">
                             <label for="total_search" class="hidden_label">검색어</label>
@@ -80,8 +95,12 @@
                                         <span class="text">초기화</span>
                                     </button>
                             </li>
-                            
                         </ul>
+                    </div>
+                    <div class="inner_area m_cont">
+                        <button type="button" class="m_gnb_btn">
+                            <img src="/img/icon_ham.png" alt="전체메뉴 아이콘">
+                        </button>
                     </div>
                 </div>
             </div>
@@ -106,9 +125,9 @@
                             <div class="container">
                                 <div class="title menu01">
                                     <div class="cont_wrapper">
-                                        <span class="title_wrapper">
+                                        <div class="title_wrapper">
                                             <span class="text">여권신청·발급</span>
-                                        </span>
+                                        </div>
                                         <div class="icon_container">
                                             <span class="icon">여권신청·발급</span>
                                         </div>
@@ -343,7 +362,1092 @@
                 </ul>
             </div>
         </div>
+        <!-- sitemap_wrap -->
+        <div class="sitemap_wrap">
+            <div class="container">
+                <div class="title_area">
+                    <div class="title">사이트맵</div>
+                </div>
+                <!-- sitemap -->
+                 <ul class="sitemap clearfix">
+                    <li>
+                        <a href="#">
+                            <span class="text">여권신청·발급</span>
+                        </a>
+                        <div class="dep2_container">
+                            <div class="container">
+                                <div class="title menu01">
+                                    <div class="cont_wrapper">
+                                        <div class="title_wrapper">
+                                            <span class="text">여권신청·발급</span>
+                                        </div>
+                                        <div class="icon_container">
+                                            <span class="icon">여권신청·발급</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="sitemap_sub_gnb">
+                                    <li><a href="#">최초 발급</a></li>
+                                    <li><a href="#">재발급</a></li>
+                                    <li><a href="#">온라인 재발급</a></li>
+                                    <li><a href="#">긴급 여권</a></li>
+                                    <li><a href="#">여행증명서</a></li>
+                                    <li><a href="#">관용·외교관 여권</a></li>
+                                    <li><a href="#">여권 분실·습득</a></li>
+                                    <li><a href="#">접수기간 안내</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="text">여권기본사항</span>
+                        </a>
+                        <div class="dep2_container">
+                            <div class="container">
+                                <div class="title menu02">
+                                    <div class="cont_wrapper">
+                                        <div class="title_wrapper">
+                                            <span class="text">여권기본사항</span>
+                                        </div>
+                                        <div class="icon_container">
+                                            <span class="icon">여권기본사항</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="sitemap_sub_gnb">
+                                    <li><a href="#">여권 사진</a></li>
+                                    <li><a href="#">로마자 성명 표기 규정</a></li>
+                                    <li><a href="#">수수료 안내</a></li>
+                                    <li><a href="#">신청서식 모음</a></li>
+                                    <li><a href="#">기재사항 변경제도</a></li>
+                                    <li><a href="#">개별우편배송서비스</a></li>
+                                    <li><a href="#">문자알림서비스</a></li>
+                                    <li><a href="#">여권사용안내</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="text">사실증명·조회</span>
+                        </a>
+                        <div class="dep2_container">
+                            <div class="container">
+                                <div class="title menu03">
+                                    <div class="cont_wrapper">
+                                        <div class="title_wrapper">
+                                            <span class="text">사실증명·조회</span>
+                                        </div>
+                                        <div class="icon_container">
+                                            <span class="icon">사실증명·조회</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="sitemap_sub_gnb">
+                                    <li><a href="#">사실증명·조회</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="text">차세대 전자여권</span>
+                        </a>
+                        <div class="dep2_container">
+                            <div class="container">
+                                <div class="title menu04">
+                                    <div class="cont_wrapper">
+                                        <div class="title_wrapper">
+                                            <span class="text">차세대 전자여권</span>
+                                        </div>
+                                        <div class="icon_container">
+                                            <span class="icon">차세대 전자여권</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="sitemap_sub_gnb">
+                                    <li><a href="#">전자여권이란?</a></li>
+                                    <li><a href="#">차세대 전자여권 안내</a></li>
+                                    <li><a href="#">온라인 체험관</a></li>
+                                    <li><a href="#">홍보자료</a></li>
+                                    <li><a href="#">여권의 역사이야기</a></li>
+                                    <li><a href="#">자주묻는 질문</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="text">알림·공시·자료</span>
+                        </a>
+                        <div class="dep2_container">
+                            <div class="container">
+                                <div class="title menu05">
+                                    <div class="cont_wrapper">
+                                        <div class="title_wrapper">
+                                            <span class="text">알림·공시·자료</span>
+                                        </div>
+                                        <div class="icon_container">
+                                            <span class="icon">알림·공시·자료</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="sitemap_sub_gnb">
+                                    <li><a href="#">알림사항</a></li>
+                                    <li><a href="#">홍보자료</a></li>
+                                    <li><a href="#">법령·지침</a></li>
+                                    <li><a href="#">해외출입국정보</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="text">여권과 소개</span>
+                        </a>
+                        <div class="dep2_container">
+                            <div class="container">
+                                <div class="title menu06">
+                                    <div class="cont_wrapper">
+                                        <div class="title_wrapper">
+                                            <span class="text">여권과 소개</span>
+                                        </div>
+                                        <div class="icon_container">
+                                            <span class="icon">여권과 소개</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="sitemap_sub_gnb">
+                                    <li><a href="#">업무 안내</a></li>
+                                    <li><a href="#">찾아오시는 길</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="none">
+                        <a href="#">
+                            <span class="text">이용안내</span>
+                        </a>
+                        <div class="dep2_container">
+                            <div class="container">
+                                <div class="title menu06">
+                                    <div class="cont_wrapper">
+                                        <div class="title_wrapper">
+                                            <span class="text">이용안내</span>
+                                        </div>
+                                        <div class="icon_container">
+                                            <span class="icon">이용안내</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="sitemap_sub_gnb">
+                                    <li><a href="#">통합검색</a></li>
+                                    <li><a href="#">장애인 이용안내</a></li>
+                                    <li><a href="#">개인정보 처리방침</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                 </ul>
+                <!-- //sitemap  -->
+                 <button type="button" class="sitemap_close">
+                    <img src="/img/sitemap_close.png" alt="닫기">
+                 </button>
+            </div>
+        </div>
+        <!-- //sitemap_wrap -->
+         <div class="sitemap_bg"></div>
     </div>
+    <form id="cmmnForm">
+        <div id="real_contents" class="contents">
+            <div class="section sec1">
+                <div class="container">
+                    <div class="main_top_area">
+                        <div class="main_slide_wrap">
+                            <div class="main_slide_list">
+                                <ul class="slider_list">
+                                    <li class="slide">
+                                        <a href="#" title="해당 게시물 페이지 이동" class="slide_cont bg1">
+                                            <div class="main_tit">여권 종류 코드가 변경됩니다.</div>
+                                            <div class="main_txt">12월 16일부터 일반여권 종류 코드가 PM, PS에서 PP로 통일되고, 여행증명서는 PT에서 PL로 변경됩니다.</div>
+                                        </a>
+                                    </li>
+                                    <li class="slide">
+                                        <a href="#" title="해당 게시물 페이지 이동" class="slide_cont bg2">
+                                            <div class="main_tit">여권 유효기간 만료일 국민비서 알림 개시</div>
+                                            <div class="main_txt">2024년 11월 20일부터 여권 유효기간 만료일 사전 알림 메시지를 국민비서를 통해 받을 수 있게 되었습니다.</div>
+                                        </a>
+                                    </li>
+                                    <li class="slide">
+                                        <a href="#" title="해당 게시물 페이지 이동" class="slide_cont bg3">
+                                            <div class="main_tit">KB스타뱅킹 앱에서도 여권 재발급 신청 가능</div>
+                                            <div class="main_txt">디지털서비스 개방에 따라 2024년 6월 17일부터 국민은행 KB스타뱅킹 앱에서도 여권 재발급 신청을 할 수 있습니다.</div>
+                                        </a>
+                                    </li>
+                                    <li class="slide">
+                                        <a href="#" title="해당 게시물 페이지 이동" class="slide_cont bg4">
+                                            <div class="main_tit">2024년 7월 1일부터 여권발급 비용 인하</div>
+                                            <div class="main_txt">한국국제교류재단법 시행령 개정에 따라 여권발급 시 납부하던 국제교류기여금이 인하되어 2024년 7월 1일부터 여권발급 비용이 줄어듭니다.</div>
+                                        </a>
+                                    </li>
+                                    <li class="slide">
+                                        <a href="#" title="해당 게시물 페이지 이동" class="slide_cont bg5">
+                                            <div class="main_tit">분실 여권 더 쉽고 빠르게 찾는다.</div>
+                                            <div class="main_txt">한 달 이상 걸리던 습득여권 처리 업무가 빠르면 이틀 이내로 단축되고, 여권 습득·수령 카카오톡 알림서비스도 시작되었습니다.</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="main_dots">
+                                    <li class="dot active">
+                                        <button type="button">1</button>
+                                    </li>
+                                    <li class="dot">
+                                        <button type="button">2</button>
+                                    </li>
+                                    <li class="dot">
+                                        <button type="button">3</button>
+                                    </li>
+                                    <li class="dot">
+                                        <button type="button">4</button>
+                                    </li>
+                                    <li class="dot">
+                                        <button type="button">5</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="icon_menu_wrap">
+                                <ul class="icon_menu_list">
+                                    <li>
+                                        <a href="#" class="icon_menu">
+                                            <img src="/img/menu_icon1.png" alt="gnbIcon">
+                                            <p>여권발급 수수료</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="icon_menu">
+                                            <img src="/img/menu_icon2.png" alt="gnbIcon">
+                                            <p>신청서 및 민원서식</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="icon_menu">
+                                            <img src="/img/menu_icon3.png" alt="gnbIcon">
+                                            <p>여권사진규격</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="icon_menu">
+                                            <img src="/img/menu_icon4.png" alt="gnbIcon">
+                                            <p>로마자성명규정</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="icon_menu">
+                                            <img src="/img/menu_icon5.png" alt="gnbIcon">
+                                            <p>여권법령정보</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="icon_menu">
+                                            <img src="/img/menu_icon8.png" alt="gnbIcon">
+                                            <p>여권분실·습득</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section sec2">
+                <div class="container">
+                    <div class="box_menu_wrap sty1">
+                        <ul class="box_menu_list box_count3">
+                            <li class="color1">
+                                <a href="#" class="plus_link" title="최초여권발급 페이지 링크이동">
+                                    <div class="box_menu_inner">
+                                        <div class="box_menu_tit">최초여권발급</div>
+                                        <div class="box_menu_txt">최초여권발급 대상과 접수처, 비용, 구비서류를<br>안내해 드립니다.</div>
+                                        <span class="plus_btn"></span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="color2">
+                                <a href="#" class="plus_link" title="재발급 페이지 링크이동">
+                                    <div class="box_menu_inner">
+                                        <div class="box_menu_tit">재발급</div>
+                                        <div class="box_menu_txt">재발급 대상과 접수처, 비용, 구비서류를<br>안내해드립니다.</div>
+                                        <span class="plus_btn"></span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="color3">
+                                <a href="#" class="plus_link" title="여권사실증명·조회 페이지 링크이동">
+                                    <div class="box_menu_inner">
+                                        <div class="box_menu_tit">여권사실증명·조회</div>
+                                        <div class="box_menu_txt">여권발급사실에 대한 증명,<br>조회 서비스 안내입니다.</div>
+                                        <span class="plus_btn"></span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box_menu_wrap sty2">
+                        <div class="left_box">
+                            <ul class="box_menu_list box_count1">
+                                <li class="color4">
+                                    <div class="plus_link sty1">
+                                        <div class="box_menu_inner">
+                                            <div class="box_menu_tit">차세대 전자여권</div>
+                                            <div class="box_menu_txt">
+                                                보안성이 강화되고 품질·디자인이 개선된<br>차세대 전자여권을 소개합니다.
+                                            </div>
+                                            <div class="box_btn_wrap">
+                                                <a href="#" class="box_btn" title="차세대 전자여권 페이지 이동">자세히보기</a>
+                                                <a href="#" class="box_btn" title="온라인 체험관 페이지 이동">온라인 체험관</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right_box">
+                            <ul class="box_menu_list box_count2 type2">
+                                <li class="color6">
+                                    <div class="plus_link sty2">
+                                        <div class="box_menu_tit">온라인 여권사진 규격확인</div>
+                                        <div class="box_menu_txt">
+                                            여권사진 파일을 업로드하여 제출할 사진이 <br>규격에 맞는지 확인해 보세요.
+                                        </div>
+                                        <div class="box_btn_wrap">
+                                            <a href="#" class="box_btn" title="사진규격확인 페이지 이동">자세히보기</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="color5">
+                                    <div class="plus_link sty2">
+                                        <div class="box_menu_tit">온라인 재발급 안내</div>
+                                        <div class="box_menu_txt">
+                                            온라인으로 간편하게 <br>여권 재발급을 신청할 수 있습니다.
+                                        </div>
+                                        <div class="box_btn_wrap">
+                                            <a href="#" class="box_btn" title="사진규격확인 페이지 이동">자세히보기</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="main_tab_wrap">
+                                <div class="title_area">
+                                    <div class="tab_box">
+                                        <ul class="tab_list">
+                                            <li class="on" data-tab="tab01">
+                                                <button type="button" class="btn">공지사항</button>
+                                            </li>
+                                            <li data-tab="tab02">
+                                                <button type="button" class="btn">보도자료</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="more">
+                                        <a href="#" id="boardViewMore">+ 전체보기</a>
+                                    </div>
+                                </div>
+                                <div id="tab01" class="tab_cont on">
+                                    <ul class="notice_list">
+                                        <li>
+                                            <div class="notice_left">
+                                                <a href="#" class="notice_link">
+                                                    <span class="notice_line">공지
+                                                        <span class="new">N</span>
+                                                    </span>
+                                                    <div class="title_box">
+                                                        <span class="title">여권 종류 코드가 변경됩니다.</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="notice_right">
+                                                <span class="notice_date">2025-12-15</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="notice_left">
+                                                <a href="#" class="notice_link">
+                                                    <span class="notice_line">공지
+                                                    </span>
+                                                    <div class="title_box">
+                                                        <span class="title">시각장애인을 위한 여권발급신청서 음성안내 서비스 시행 안내</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="notice_right">
+                                                <span class="notice_date">2025-10-30</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="notice_left">
+                                                <a href="#" class="notice_link">
+                                                    <span class="notice_line">공지
+                                                    </span>
+                                                    <div class="title_box">
+                                                        <span class="title">온라인 여권사진 검증 서비스 개편 안내</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="notice_right">
+                                                <span class="notice_date">2025-07-18</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="notice_left">
+                                                <a href="#" class="notice_link">
+                                                    <span class="notice_line">공지
+                                                    </span>
+                                                    <div class="title_box">
+                                                        <span class="title">여권 유효기간 만료 사전알림서비스 피싱 관련 안내사항</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="notice_right">
+                                                <span class="notice_date">2025-04-03</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="notice_left">
+                                                <a href="#" class="notice_link">
+                                                    <span class="notice_line">공지
+                                                    </span>
+                                                    <div class="title_box">
+                                                        <span class="title">재외공관, 영사콜센터 등 사칭 피싱 범죄 주의</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="notice_right">
+                                                <span class="notice_date">2025-03-14</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="tab02" class="tab_cont">
+                                    <ul class="notice_list">
+                                        <li>
+                                            <div class="notice_left">
+                                                <a href="#" class="notice_link">
+                                                    <span class="notice_line">보도</span>
+                                                    <div class="title_box">
+                                                        <span class="title">여권 종류 코드가 국제표준 개정에 따라 오는 12월 16일부터 변경됩니다.</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="notice_right">
+                                                <span class="notice_date">2025-12-10</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="notice_left">
+                                                <a href="#" class="notice_link">
+                                                    <span class="notice_line">보도</span>
+                                                    <div class="title_box">
+                                                        <span class="title">여권 개별 우편배송 서비스 재개</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="notice_right">
+                                                <span class="notice_date">2025-10-01</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="notice_left">
+                                                <a href="#" class="notice_link">
+                                                    <span class="notice_line">보도</span>
+                                                    <div class="title_box">
+                                                        <span class="title">여권정보를 이용한 신분 확인, 스마트 폰으로 가능해진다.
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="notice_right">
+                                                <span class="notice_date">2025-09-24</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="notice_left">
+                                                <a href="#" class="notice_link">
+                                                    <span class="notice_line">보도</span>
+                                                    <div class="title_box">
+                                                        <span class="title">더 편리해진 여권 우편배송서비스를 2025.5.1.부터 시행합니다.</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="notice_right">
+                                                <span class="notice_date">2025-04-21</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="notice_left">
+                                                <a href="#" class="notice_link">
+                                                    <span class="notice_line">보도</span>
+                                                    <div class="title_box">
+                                                        <span class="title">5월 1일부터 병역미필자 모두에게 ‘10년 복수여권 발급’</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="notice_right">
+                                                <span class="notice_date">2025-04-11</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section sec4">
+                <div class="container">
+                    <div class="freq_ask">
+                        <div class="title">자주묻는 질문</div>
+                        <div class="tag_select">
+                            <div class="tag_list">
+                                <div class="list">
+                                    <div class="tab_slider_wrap">
+                                        <button type="button" class="tab_prev">Previous</button>
+                                        <ul class="tab_slider">
+                                            <li class="item">
+                                                <button type="button" class="top_question btn atv" data-type="all">
+                                                    <span class="text">전체</span>
+                                                </button>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="top_question btn " data-type="next_passport">
+                                                    <span class="text">#차세대 전자여권</span>
+                                                </button>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="top_question btn " data-type="issued">
+                                                    <span class="text">#여권발급</span>
+                                                </button>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="top_question btn " data-type="provision">
+                                                    <span class="text">#여권사진 규정</span>
+                                                </button>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="top_question btn " data-type="roman">
+                                                    <span class="text">#로마자성명 표기</span>
+                                                </button>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="top_question btn " data-type="basic">
+                                                    <span class="text">#여권관련 기본사항</span>
+                                                </button>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="top_question btn " data-type="lost">
+                                                    <span class="text">#여권분실</span>
+                                                </button>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="top_question btn " data-type="military">
+                                                    <span class="text">#병역의무자의 여권</span>
+                                                </button>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="top_question btn " data-type="youth">
+                                                    <span class="text">#만18세 미만 미성년자의 여권</span>
+                                                </button>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="top_question btn " data-type="online">
+                                                    <span class="text">#온라인여권 간편서비스</span>
+                                                </button>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="top_question btn " data-type="passport">
+                                                    <span class="text">#전자여권</span>
+                                                </button>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="top_question btn " data-type="fact">
+                                                    <span class="text">#여권 사실증명</span>
+                                                </button>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="top_question btn " data-type="parallelism">
+                                                    <span class="text">#종전 일반여권 병행발급</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                        <button type="button" class="tab_next">Next</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ask_slider_container">
+                            <div id="questionBox" class="ask_slide">
+                                <div class="ask_slider_wrap">
+                                    <button type="button" class="ask_prev">Previous</button>
+                                    <div class="ask_slider">
+                                        <!-- <div class="slide">
+                                            <a href="#" class="slide_wrapper">
+                                                <div class="tag_box">
+                                                    <span class="tag">여권이란?</span>
+                                                </div>
+                                                <div class="img_box">
+                                                    <div class="img_container">
+                                                        <div class="img_wrapper">
+                                                            <img src="./img/sec4_dummy.jpg" alt="slide_img">
+                                                            <div class="tag_txt_cont">
+                                                                <div class="tag_inner_box">
+                                                                    <span class="tag_txt">#전자여권</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text_box">
+                                                    <div class="title hover">				여권은 소지자의 국적 등 신분을 증명하는 공문서의 일종으로서, 외국을 여행하려는 국민은 여권을 소지할 의무가 있습니다. (여권법 제2조)여권의 종류로는 일반여권, 관용여권, 외교관여권이 있으며, 사용 가능 횟수에 따라 1회에 한하여 외국여행을 할 수 있는 단수여권과유효기간 만료일까지 횟수에 제한 없이 외국여행을 할 수 있는 복수여권으로 구분할 수 있습니다. (여권법 제4조)			</div>
+                                                    <div class="title no_hover">				여권이란?			</div>
+                                                    <div class="btn_box">
+                                                        <div class="btn">
+                                                            <span class="text">자세히보기</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="slide">
+                                            <a href="#" class="slide_wrapper">
+                                                <div class="tag_box">
+                                                    <span class="tag">여권이란?</span>
+                                                </div>
+                                                <div class="img_box">
+                                                    <div class="img_container">
+                                                        <div class="img_wrapper">
+                                                            <img src="./img/sec4_dummy.jpg" alt="slide_img">
+                                                            <div class="tag_txt_cont">
+                                                                <div class="tag_inner_box">
+                                                                    <span class="tag_txt">#전자여권</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text_box">
+                                                    <div class="title hover">				여권은 소지자의 국적 등 신분을 증명하는 공문서의 일종으로서, 외국을 여행하려는 국민은 여권을 소지할 의무가 있습니다. (여권법 제2조)여권의 종류로는 일반여권, 관용여권, 외교관여권이 있으며, 사용 가능 횟수에 따라 1회에 한하여 외국여행을 할 수 있는 단수여권과유효기간 만료일까지 횟수에 제한 없이 외국여행을 할 수 있는 복수여권으로 구분할 수 있습니다. (여권법 제4조)			</div>
+                                                    <div class="title no_hover">				여권이란?			</div>
+                                                    <div class="btn_box">
+                                                        <div class="btn">
+                                                            <span class="text">자세히보기</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="slide">
+                                            <a href="#" class="slide_wrapper">
+                                                <div class="tag_box">
+                                                    <span class="tag">여권이란?</span>
+                                                </div>
+                                                <div class="img_box">
+                                                    <div class="img_container">
+                                                        <div class="img_wrapper">
+                                                            <img src="./img/sec4_dummy.jpg" alt="slide_img">
+                                                            <div class="tag_txt_cont">
+                                                                <div class="tag_inner_box">
+                                                                    <span class="tag_txt">#전자여권</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text_box">
+                                                    <div class="title hover">				여권은 소지자의 국적 등 신분을 증명하는 공문서의 일종으로서, 외국을 여행하려는 국민은 여권을 소지할 의무가 있습니다. (여권법 제2조)여권의 종류로는 일반여권, 관용여권, 외교관여권이 있으며, 사용 가능 횟수에 따라 1회에 한하여 외국여행을 할 수 있는 단수여권과유효기간 만료일까지 횟수에 제한 없이 외국여행을 할 수 있는 복수여권으로 구분할 수 있습니다. (여권법 제4조)			</div>
+                                                    <div class="title no_hover">				여권이란?			</div>
+                                                    <div class="btn_box">
+                                                        <div class="btn">
+                                                            <span class="text">자세히보기</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="slide">
+                                            <a href="#" class="slide_wrapper">
+                                                <div class="tag_box">
+                                                    <span class="tag">여권이란?</span>
+                                                </div>
+                                                <div class="img_box">
+                                                    <div class="img_container">
+                                                        <div class="img_wrapper">
+                                                            <img src="./img/sec4_dummy.jpg" alt="slide_img">
+                                                            <div class="tag_txt_cont">
+                                                                <div class="tag_inner_box">
+                                                                    <span class="tag_txt">#전자여권</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text_box">
+                                                    <div class="title hover">				여권은 소지자의 국적 등 신분을 증명하는 공문서의 일종으로서, 외국을 여행하려는 국민은 여권을 소지할 의무가 있습니다. (여권법 제2조)여권의 종류로는 일반여권, 관용여권, 외교관여권이 있으며, 사용 가능 횟수에 따라 1회에 한하여 외국여행을 할 수 있는 단수여권과유효기간 만료일까지 횟수에 제한 없이 외국여행을 할 수 있는 복수여권으로 구분할 수 있습니다. (여권법 제4조)			</div>
+                                                    <div class="title no_hover">				여권이란?			</div>
+                                                    <div class="btn_box">
+                                                        <div class="btn">
+                                                            <span class="text">자세히보기</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="slide">
+                                            <a href="#" class="slide_wrapper">
+                                                <div class="tag_box">
+                                                    <span class="tag">여권이란?</span>
+                                                </div>
+                                                <div class="img_box">
+                                                    <div class="img_container">
+                                                        <div class="img_wrapper">
+                                                            <img src="./img/sec4_dummy.jpg" alt="slide_img">
+                                                            <div class="tag_txt_cont">
+                                                                <div class="tag_inner_box">
+                                                                    <span class="tag_txt">#전자여권</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text_box">
+                                                    <div class="title hover">				여권은 소지자의 국적 등 신분을 증명하는 공문서의 일종으로서, 외국을 여행하려는 국민은 여권을 소지할 의무가 있습니다. (여권법 제2조)여권의 종류로는 일반여권, 관용여권, 외교관여권이 있으며, 사용 가능 횟수에 따라 1회에 한하여 외국여행을 할 수 있는 단수여권과유효기간 만료일까지 횟수에 제한 없이 외국여행을 할 수 있는 복수여권으로 구분할 수 있습니다. (여권법 제4조)			</div>
+                                                    <div class="title no_hover">				여권이란?			</div>
+                                                    <div class="btn_box">
+                                                        <div class="btn">
+                                                            <span class="text">자세히보기</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="slide">
+                                            <a href="#" class="slide_wrapper">
+                                                <div class="tag_box">
+                                                    <span class="tag">여권이란?</span>
+                                                </div>
+                                                <div class="img_box">
+                                                    <div class="img_container">
+                                                        <div class="img_wrapper">
+                                                            <img src="./img/sec4_dummy.jpg" alt="slide_img">
+                                                            <div class="tag_txt_cont">
+                                                                <div class="tag_inner_box">
+                                                                    <span class="tag_txt">#전자여권</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text_box">
+                                                    <div class="title hover">				여권은 소지자의 국적 등 신분을 증명하는 공문서의 일종으로서, 외국을 여행하려는 국민은 여권을 소지할 의무가 있습니다. (여권법 제2조)여권의 종류로는 일반여권, 관용여권, 외교관여권이 있으며, 사용 가능 횟수에 따라 1회에 한하여 외국여행을 할 수 있는 단수여권과유효기간 만료일까지 횟수에 제한 없이 외국여행을 할 수 있는 복수여권으로 구분할 수 있습니다. (여권법 제4조)			</div>
+                                                    <div class="title no_hover">				여권이란?			</div>
+                                                    <div class="btn_box">
+                                                        <div class="btn">
+                                                            <span class="text">자세히보기</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="slide">
+                                            <a href="#" class="slide_wrapper">
+                                                <div class="tag_box">
+                                                    <span class="tag">여권이란?</span>
+                                                </div>
+                                                <div class="img_box">
+                                                    <div class="img_container">
+                                                        <div class="img_wrapper">
+                                                            <img src="./img/sec4_dummy.jpg" alt="slide_img">
+                                                            <div class="tag_txt_cont">
+                                                                <div class="tag_inner_box">
+                                                                    <span class="tag_txt">#전자여권</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text_box">
+                                                    <div class="title hover">				여권은 소지자의 국적 등 신분을 증명하는 공문서의 일종으로서, 외국을 여행하려는 국민은 여권을 소지할 의무가 있습니다. (여권법 제2조)여권의 종류로는 일반여권, 관용여권, 외교관여권이 있으며, 사용 가능 횟수에 따라 1회에 한하여 외국여행을 할 수 있는 단수여권과유효기간 만료일까지 횟수에 제한 없이 외국여행을 할 수 있는 복수여권으로 구분할 수 있습니다. (여권법 제4조)			</div>
+                                                    <div class="title no_hover">				여권이란?			</div>
+                                                    <div class="btn_box">
+                                                        <div class="btn">
+                                                            <span class="text">자세히보기</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="slide">
+                                            <a href="#" class="slide_wrapper">
+                                                <div class="tag_box">
+                                                    <span class="tag">여권이란?</span>
+                                                </div>
+                                                <div class="img_box">
+                                                    <div class="img_container">
+                                                        <div class="img_wrapper">
+                                                            <img src="./img/sec4_dummy.jpg" alt="slide_img">
+                                                            <div class="tag_txt_cont">
+                                                                <div class="tag_inner_box">
+                                                                    <span class="tag_txt">#전자여권</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text_box">
+                                                    <div class="title hover">				여권은 소지자의 국적 등 신분을 증명하는 공문서의 일종으로서, 외국을 여행하려는 국민은 여권을 소지할 의무가 있습니다. (여권법 제2조)여권의 종류로는 일반여권, 관용여권, 외교관여권이 있으며, 사용 가능 횟수에 따라 1회에 한하여 외국여행을 할 수 있는 단수여권과유효기간 만료일까지 횟수에 제한 없이 외국여행을 할 수 있는 복수여권으로 구분할 수 있습니다. (여권법 제4조)			</div>
+                                                    <div class="title no_hover">				여권이란?			</div>
+                                                    <div class="btn_box">
+                                                        <div class="btn">
+                                                            <span class="text">자세히보기</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div> -->
+                                    </div>
+                                    <button type="button" class="ask_next">Next</button>
+                                </div>
+                                    <li class="dot">
+                                        <button type="button">1</button>
+                                    </li>
+                                    <li class="dot">
+                                        <button type="button">2</button>
+                                    </li>
+                                    <li class="dot">
+                                        <button type="button">3</button>
+                                    </li>
+                                    <li class="dot">
+                                        <button type="button">4</button>
+                                    </li>
+                                    <li class="dot">
+                                        <button type="button">5</button>
+                                    </li>
+                                    <li class="dot">
+                                        <button type="button">6</button>
+                                    </li>
+                                    <li class="dot">
+                                        <button type="button">7</button>
+                                    </li>
+                                    <li class="dot">
+                                        <button type="button">8</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section sec3">
+                <div class="container">
+                    <div class="sec3_cont_wrap">
+                        <div class="sec3_title">지도로 보는 지역별 민원실</div>
+                        <div class="sec3_cont_inner">
+                            <div class="left_wrap">
+                                <div class="sec3_left_list">
+                                    <li class="color1">
+                                        <a href="#" class="left_list_link">
+                                            <div class="list_tit">국내 접수처</div>
+                                            <div class="list_txt">
+                                                <span class="else_txt">258</span>곳
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="color2">
+                                        <a href="#" class="left_list_link">
+                                            <div class="list_tit">재외공간</div>
+                                            <div class="list_txt">
+                                                <span class="else_txt">188</span>곳
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="color3">
+                                        <a href="#" class="left_list_link">
+                                            <div class="list_tit">내 주변</div>
+                                            <div class="list_tit pb">여권민원실 찾기</div>
+                                        </a>
+                                    </li>
+                                </div>
+                                <div class="sec3_img_box">
+                                    <a href="#" class="sec3_img_link">
+                                        <div class="img_tit">지도로 보는<br>지역별 여권 민원실</div>
+                                        <div class="img_subtxt">※ 접수처 정보(여권업무시간 및<br>주소)는 상시 변경될 수 있으니, 해당<br>기관에 직접 확인 후 방문하시기<br>바랍니다</div>
+                                        <div class="view_txt">자세히보기</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right_wrap">
+                                <div class="sec3_slide_wrap">
+                                    <div id="sec3_slide_list" class="sec3_slide_list">
+                                        <div class="slider_img">
+                                            <li class="slideimg">
+                                                <a href="#" class="popzone_link">
+                                                    <div class="img_box">
+                                                        <div class="inner_box">
+                                                            <img src="./img/다운로드 (1).png" alt="병역미필자 유의사항 안내">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="slideimg">
+                                                <a href="#" class="popzone_link">
+                                                    <div class="img_box">
+                                                        <div class="inner_box">
+                                                            <img src="./img/다운로드 (2).png" alt="쉽고 빠른 내분실여권 찾기">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="slideimg">
+                                                <a href="#" class="popzone_link">
+                                                    <div class="img_box">
+                                                        <div class="inner_box">
+                                                            <img src="./img/다운로드 (3).png" alt="공공마이데이터">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="slideimg">
+                                                <a href="#" class="popzone_link">
+                                                    <div class="img_box">
+                                                        <div class="inner_box">
+                                                            <img src="./img/다운로드.png" alt="현아의 차세대 전자여권 체험">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form id="cmmnForm">
+    <div id="footer" class="footer">
+        <div class="ft_top">
+            <div class="container">
+                <div class="box">
+                    <div class="ft_list">
+                        <ul class="list">
+                            <li class="item">
+                                <div class="inner">
+                                    <div class="title">
+                                        <span class="text">외교부 여권과</span>
+                                    </div>
+                                    <div class="desc">
+                                        <p>민원실은 9시부터 18시까지 운영 (토,일, 법정공휴일 휴무)</p>
+                                        <p>09:00 ~ 12:00 / 13:00 ~ 18:00</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="inner">
+                                    <div class="title">
+                                        <span class="text">여권 민원 상담</span>
+                                    </div>
+                                    <div class="desc">
+                                        <p class="bold">02-3210-0404</p>
+                                        <p class="bold">(영사안전콜센터)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="inner">
+                                    <div class="title">
+                                        <span class="text">인천공항 민원실</span>
+                                    </div>
+                                    <div class="desc">
+                                        <p>1터미널 : 09:00 ~ 18:00 (토,일 정상근무, 법정공휴일 휴무)</p>
+                                        <p>2터미널 : 09:00 ~ 18:00 (연중무휴)</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ft_btm">
+            <div class="container">
+                <div class="address">
+                    <div class="txt_box">
+                        <div class="list">
+                            <div class="item">
+                                <div class="svc_list">
+                                    <ul class="item_list">
+                                        <li class="item">
+                                            <a href="#" target="_blank" class="ft_c" title="새창 열림">개인정보처리방침</a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="#">여권과 업무소개</a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="#">찾아오시는길</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="logo">
+                                <div class="logo_box">
+                                    <a href="https://www.mofa.go.kr/www/index.do" target="_blank">
+                                        <img src="/img/footer_logo.png" alt="외교부 로고">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">(06750) 서울 서초구 남부순환로 2558 외교타운 1층(여권민원실), 10층</div>
+                            <div class="item">Copyright 2012-외교부 All Rights Reserved.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="site_box">
+                    <div class="baro_box">
+                        <div class="site_btn_wrapper">
+                            <button type="button" class="site_btn">
+                                <span class="text">관련사이트 바로가기</span>
+                            </button>
+                            <ul class="site_link">
+                                <li>
+                                    <a href="http://www.mofa.go.kr" target="_blank">외교부</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.0404.go.kr" target="_blank">외교부 해외안전여행</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.0404.go.kr/bbs/contsPst/MST0000000000104/4/detail" target="_blank">영사안전콜센터</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.gov.kr/portal/main" target="_blank">정부24</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.g4k.go.kr" target="_blank">재외동포 365민원포털</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button type="button" class="move_top">
+                            <span class="text">위로</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="nurilogo_box">
+                    <a href="#" target="_blank"></a>
+                    <img src="/img/new_img_opencode4_6k.jpg" alt="공공누리 4마크">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 </body>
 </html>
