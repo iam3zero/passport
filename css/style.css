@@ -2,29 +2,29 @@
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 200;
-  src: url("/font/NotoSansKR-Thin.ttf") format("truetype");
+  src: url("../font/NotoSansKR-Thin.ttf") format("truetype");
 }
 @font-face {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 300;
-  src: url("/font/NotoSansKR-Light.ttf") format("truetype");
+  src: url("../font/NotoSansKR-Light.ttf") format("truetype");
 }
 @font-face {
   font-family: 'Noto Sans KR';
   font-weight: 400;
   font-style: normal;
-  src: url("/font/NotoSansKR-Regular.ttf") format("truetype");
+  src: url("../font/NotoSansKR-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: 'Noto Sans KR';
   font-weight: 500;
   font-style: normal;
-  src: url("/font/NotoSansKR-Medium.ttf") format("truetype");
+  src: url("../font/NotoSansKR-Medium.ttf") format("truetype");
 }
 @font-face {
   font-family: "ONEMobileTitle";
-  src: url("/font/ONE\ Mobile\ Title.ttf") format("truetype");
+  src: url("../font/ONE\ Mobile\ Title.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -1605,12 +1605,12 @@ body.sitemap_open {
 }
 .sec3 .sec3_cont_wrap .sec3_cont_inner .left_wrap .sec3_left_list > li.color2 {
     background-color: #3cb0af;
-    background-image: url(/img/bt_left_img2.png);
+    background-image: url(../img/bt_left_img2.png);
     background-position: right 21px bottom 23px;
 }
 .sec3 .sec3_cont_wrap .sec3_cont_inner .left_wrap .sec3_left_list > li.color3 {
     background-color: #39437e;
-    background-image: url(/img/bt_left_img4.png);
+    background-image: url(../img/bt_left_img4.png);
     background-position: right 26px bottom 43px;
 }
 .sec3 .sec3_cont_wrap .sec3_cont_inner .left_wrap .sec3_left_list > li .left_list_link {
@@ -1650,7 +1650,7 @@ body.sitemap_open {
 .sec3 .sec3_cont_wrap .sec3_cont_inner .left_wrap .sec3_img_box .sec3_img_link {
     display: block;
     padding: 50px 39px;
-    background-image: url(/img/bt_left_map.png);
+    background-image: url(../img/bt_left_map.png);
     background-position: right 35px bottom 28px;
     background-repeat: no-repeat;
 }
@@ -1686,7 +1686,7 @@ body.sitemap_open {
     right: 0;
     width: 11px;
     height: 10px;
-    background-image: url(/img/main_arr_r.png);
+    background-image: url(../img/main_arr_r.png);
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -1953,7 +1953,7 @@ img {
     right: 30px;
     width: 11px;
     height: 7px;
-    background-image: url(/img/grey_arrow.png);
+    background-image: url(../img/grey_arrow.png);
     background-position: center center;
     background-size: 11px auto;
     background-repeat: no-repeat;
@@ -1999,7 +1999,7 @@ img {
     width: 54px;
     height: 54px;
     background-color: #1880e1;
-    background-image: url(/img/icon_move_top.png);
+    background-image: url(../img/icon_move_top.png);
     background-position: center center;
     background-size: 18px auto;
     background-repeat: no-repeat;
@@ -2450,7 +2450,7 @@ html {
     }
     .sec3 .sec3_cont_wrap .sec3_cont_inner .left_wrap .sec3_img_box .sec3_img_link {
         padding: 22px 15px;
-        background-image: url(/img/bt_left_map.png);
+        background-image: url(../img/bt_left_map.png);
         background-position: right center;
         background-size: 130px 135px;
     }
